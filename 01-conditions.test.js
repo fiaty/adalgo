@@ -18,7 +18,15 @@ describe("estPositif", () => {
 // Même pattern qu'estPositif — écris les 3 tests toi-même.
 // Cas à couvrir : un nombre pair, un nombre impair, zéro.
 describe("estPair", () => {
-  // à compléter
+  it("retourne true pour un nombre pair", () => {
+    expect(estPositif(5)).toBe(true)
+  })
+  it("retourne false pour un nombre impair", () => {
+    expect(estPositif(-3)).toBe(false)
+  })
+  it("retourne true pour un resultat nul", () => {
+    expect(estPositif(0)).toBe(true)
+  })
 })
 
 // Nouveau pattern : deux paramètres, cas d'égalité.
@@ -37,8 +45,19 @@ describe("max", () => {
 
 // Même pattern que max — écris les tests pour chaque mention.
 // Cas à couvrir : une note dans chaque tranche, et la valeur frontière 16.
-describe("mention", () => {
-  // à compléter
+describe(mention, () => {
+  it("retourne très bien si note>= 16", () => {
+    expect(mention(16)).toBe("Très bien")
+  })
+  it("retourne bien si note>= 14", () => {
+    expect(mention(14)).toBe("Bien")
+  })
+  it("retourne assez bien si note>= 12", () => {
+    expect(mention(12)).toBe("Assez bien")
+  })
+  it("retourne passable si note>= 10", () => {
+    expect(mention(10)).toBe("Passable")
+  })
 })
 
 // [FACULTATIF] Même pattern — à toi.
