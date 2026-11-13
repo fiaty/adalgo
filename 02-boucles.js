@@ -8,7 +8,8 @@
  * @example compterJusqua(5) → affiche 1, 2, 3, 4, 5
  */
 export const compterJusqua = (n) => {
-  // à compléter
+  for (let i=1; i<=n; i++)
+    console.log(i);
 }
 
 /**
@@ -18,8 +19,10 @@ export const compterJusqua = (n) => {
  * @example afficherPairs(8) → affiche 2, 4, 6, 8
  */
 export const afficherPairs = (n) => {
-  // à compléter
-}
+  for (let i=1; i<=n; i++)
+    if (i % 2 === 0){
+    console.log(i)
+}}
 
 /**
  * Retourne la somme de tous les entiers de 1 à n.
@@ -29,7 +32,11 @@ export const afficherPairs = (n) => {
  * @example somme(5) → 15  (1+2+3+4+5)
  */
 export const somme = (n) => {
-  // à compléter
+     let acc = 0
+  for (let i = 1; i<=n; i++){
+    acc = acc + i
+  }
+  return acc
 }
 
 /**
@@ -41,8 +48,13 @@ export const somme = (n) => {
  * @example produit(0) → 1
  */
 export const produit = (n) => {
-  // à compléter
+  let acc = 1
+  for (let i = 1; i<= n; i++){
+   acc = acc * i
+  }
+  return acc
 }
+
 
 /**
  * Retourne le nombre d'entiers pairs entre 1 et n inclus.
@@ -53,8 +65,14 @@ export const produit = (n) => {
  * @example compterPairs(7)  → 3
  */
 export const compterPairs = (n) => {
-  // à compléter
+     let nombre = 0;
+ for (let i =1; i <= n; i++ ) {
+  if (i % 2 === 0)
+    nombre = nombre + 1;
+ }
+ return nombre;
 }
+
 
 /**
  * Retourne un tableau contenant les n premiers multiples de n.
