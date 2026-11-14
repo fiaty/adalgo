@@ -83,8 +83,12 @@ export const compterPairs = (n) => {
  * @example table(0) → []
  */
 export const table = (n) => {
-  // à compléter
+  let tableau = [];
+  for (let i=1; i <=n; i++){
+    tableau.push(n*i);
 }
+return tableau;
+};
 
 /**
  * Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite.
@@ -96,8 +100,13 @@ export const table = (n) => {
  * @example multiplesJusqua(7, 20) → [7, 14]
  */
 export const multiplesJusqua = (n, limite) => {
-  // à compléter
-}
+  let tableau = [];
+  for (let i = n; i <= limite; i += n) {
+    tableau.push(i);
+  }
+    return tableau;
+ };
+
 
 /**
  * [FACULTATIF]

@@ -76,8 +76,17 @@ describe("table", () => {
 // Même pattern que table — à toi.
 // Cas à couvrir : multiplesJusqua(3, 12) → [3, 6, 9, 12], multiplesJusqua(7, 20) → [7, 14].
 describe("multiplesJusqua", () => {
-  // à compléter
-})
+  it("retourne les multiples de 3 jusqu'à 12", () => {
+    expect(multiplesJusqua(3, 12)).toEqual([3, 6, 9, 12]);
+  })
+  it("retourne les multiples de 7 jusqu'à 20", () => {
+    expect(multiplesJusqua(7, 20)).toEqual([7, 14]);
+  });
+
+  it("retourne un tableau vide si n dépasse la limite", () => {
+    expect(multiplesJusqua(5, 3)).toEqual([]);
+  });
+});
 
 // [FACULTATIF] Même pattern que somme/produit — à toi.
 // Cas à couvrir : puissance(2, 10) → 1024, puissance(3, 3) → 27, puissance(5, 0) → 1.

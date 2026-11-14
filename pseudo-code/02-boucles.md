@@ -44,7 +44,7 @@ RETOURNER produit
 VARIABLES
 n, i, nombre: ENTIER 
 DEBUT
-AFFICHER " entrer
+AFFICHER " entrer "
 LIRE n
 nombre ← 0
 POUR i ← 1 à n
@@ -56,3 +56,30 @@ POUR i ← 1 à n
   FIN     
 
 
+VARIABLES
+n, i : ENTIER
+tableau: TABLEAU
+DEBUT
+AFFICHER "tableau"
+LIRE n
+tableau ← []
+ POUR i ← 1 à n FAIRE
+AJOUTER (n * i) à tableau 
+ FIN POUR
+RETOUNER tableau
+FIN
+
+VARIABLES
+n, limite, i : ENTIER
+tableau : TABLEAU
+AFFICHER "tableau"
+LIRE n
+DEBUT
+tableau ← []
+i ← n
+  TANT QUE i <= limite FAIRE
+  AJOUTER i À tableau
+   i ← i + n
+ FIN TANT QUE
+RETOURNER tableau
+FIN
